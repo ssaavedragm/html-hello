@@ -14,6 +14,10 @@
   --accent-2: #7b5cff;
   --accent-3: #ffd27a;
   --gradient: linear-gradient(120deg, var(--accent), var(--accent-2));
+  /* Fondo con texto blanco encima: contraste ≥ 5:1 */
+  --gradient-strong: linear-gradient(120deg, #c4401f, #5a3fd9);
+  /* Texto pequeño con degradado sobre fondo oscuro: contraste ≥ 5.9:1 */
+  --gradient-text: linear-gradient(120deg, #ff8a6b, #a58fff);
 
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -123,7 +127,7 @@ main:focus { outline: none; }
   font-weight: 600;
   letter-spacing: .2em;
   text-transform: uppercase;
-  background: var(--gradient);
+  background: var(--gradient-text);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -145,7 +149,7 @@ main:focus { outline: none; }
 .btn:hover { transform: translateY(-2px); }
 
 .btn--primary {
-  background: var(--gradient);
+  background: var(--gradient-strong);
   color: #fff;
   box-shadow: 0 10px 30px -10px var(--accent);
 }
@@ -521,7 +525,7 @@ main:focus { outline: none; }
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 1rem;
-  background: var(--gradient);
+  background: var(--gradient-strong);
   color: #fff;
   line-height: 1;
 }
